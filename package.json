@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "eslint": "^7.3.1",
     "fs": "^0.0.1-security",
     "ramda": "^0.26.1",
     "react": "^16.8.6",
