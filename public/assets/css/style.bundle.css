@@ -40,7 +40,7 @@
 
 *,
 *::before,
-*::after {
+*::after, #root {
   box-sizing: border-box; }
 
 html {
@@ -50,7 +50,11 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
-  display: block; }
+	display: block; }
+	
+#root {
+	display: contents !important;
+}
 
 body {
   margin: 0;

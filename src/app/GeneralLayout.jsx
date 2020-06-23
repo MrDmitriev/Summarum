@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React, { Component } from 'react';
 import GeneralAside from './GeneralAside';
-
+import SummariesList from 'components/organisms/SummariesList/SummariesList';
 
 export default class GeneralLayout extends Component {
 	render() {
@@ -1564,6 +1564,7 @@ export default class GeneralLayout extends Component {
 								{/* <!--begin::Container--> */}
 								<div className="container">
 									<p>Page content goes here...</p>
+									<SummariesList />
 								</div>
 								{/* <!--end::Container--> */}
 							</div>

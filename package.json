@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "fs": "^0.0.1-security",
     "ramda": "^0.26.1",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.1",
@@ -11,6 +12,7 @@
     "react-redux": "^7.1.0",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
+    "react-svg": "^11.0.27",
     "redux": "^4.0.1"
   },
   "scripts": {
