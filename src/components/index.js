@@ -5,7 +5,6 @@ export {default as ScrollTop} from './atoms/ScrollTop/ScrollTop';
 export {default as Button} from './atoms/Button/Button';
 
 // molekules
-export {default as LeftMenu} from './molekules/LeftMenu/LeftMenu';
 export {default as Header} from './molekules/Header/Header';
 export {default as RectangleInfo} from './molekules/RectangleInfo/RectangleInfo';
 

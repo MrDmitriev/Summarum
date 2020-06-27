@@ -1563,7 +1563,6 @@ export default class GeneralLayout extends Component {
 			        <div className="d-flex flex-column-fluid">
 			          {/* <!--begin::Container--> */}
 			          <div className="container">
-			            <p>Page content goes here...</p>
 			            <SummariesList />
 			          </div>
 			          {/* <!--end::Container--> */}
