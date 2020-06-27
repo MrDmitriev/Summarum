@@ -16,7 +16,4 @@ plugins: ['react']
 settings:
   react:
     version: '16'
-
-{
-    "indent": ["error", "tab"]
-}
+  indent: ["error", "tab"]

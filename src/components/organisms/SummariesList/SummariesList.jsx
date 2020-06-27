@@ -1,8 +1,6 @@
 import React, {useState} from "react";
 import {Nav, Tab} from "react-bootstrap";
-import SVG from "react-inlinesvg";
-import {toAbsoluteUrl} from "utils/helpers";
-
+import SummaryItem from "./components/SummaryItem";
 
 export default function AdvanceTablesWidget2({className}) {
   const [key, setKey] = useState(`Month`);
@@ -13,10 +11,10 @@ export default function AdvanceTablesWidget2({className}) {
       <div className="card-header border-0 pt-5">
         <h3 className="card-title align-items-start flex-column">
           <span className="card-label font-weight-bolder text-dark">
-            New Arrivals
+            Newly created summaries
           </span>
           <span className="text-muted mt-3 font-weight-bold font-size-sm">
-            More than 400+ new members
+            executive summaries found: 40
           </span>
         </h3>
         <div className="card-toolbar">
@@ -75,74 +73,7 @@ export default function AdvanceTablesWidget2({className}) {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td className="pl-0 py-4">
-                  <div className="symbol symbol-50 symbol-light mr-1">
-                    <span className="symbol-label">
-                      <SVG
-                        src={`/assets/media/svg/misc/006-plurk.svg`}
-                        className="h-50 align-self-center"
-                      ></SVG>
-                    </span>
-                  </div>
-                </td>
-                <td className="pl-0">
-                  <a
-                    href="#"
-                    className="text-dark-75 font-weight-bolder text-hover-primary mb-1 font-size-lg"
-                  >
-                    Sant Outstanding
-                  </a>
-                  <div>
-                    <span className="font-weight-bolder">Email:</span>{` `}
-                    <a
-                      className="text-muted font-weight-bold text-hover-primary"
-                      href="#"
-                    >
-                      bprow@bnc.cc
-                    </a>
-                  </div>
-                </td>
-                <td className="text-right">
-                  <span className="text-dark-75 font-weight-bolder d-block font-size-lg">
-                    $2,000,000
-                  </span>
-                  <span className="text-muted font-weight-bold">Paid</span>
-                </td>
-                <td className="text-right">
-                  <span className="text-muted font-weight-500">
-                    ReactJs, HTML
-                  </span>
-                </td>
-                <td className="text-right">
-                  <span className="label label-lg label-light-primary label-inline">
-                    Approved
-                  </span>
-                </td>
-                <td className="text-right pr-0">
-                  <a href="#" className="btn btn-icon btn-light btn-sm">
-                    <span className="svg-icon svg-icon-md svg-icon-primary">
-                      <SVG
-                        src='/assets/media/svg/icons/General/Settings-1.svg'
-                      ></SVG>
-                    </span>
-                  </a>
-                  <a href="#" className="btn btn-icon btn-light btn-sm mx-3">
-                    <span className="svg-icon svg-icon-md svg-icon-primary">
-                      <SVG
-                        src='/assets/media/svg/icons/Communication/Write.svg'
-                      ></SVG>
-                    </span>
-                  </a>
-                  <a href="#" className="btn btn-icon btn-light btn-sm">
-                    <span className="svg-icon svg-icon-md svg-icon-primary">
-                      <SVG
-                        src='/assets/media/svg/icons/General/Trash.svg'
-                      ></SVG>
-                    </span>
-                  </a>
-                </td>
-              </tr>
+              <SummaryItem />
             </tbody>
           </table>
         </div>
