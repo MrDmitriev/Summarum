@@ -2426,7 +2426,7 @@ export default class GeneralLayout extends Component {
 			              <div className="col-4 text-right">
 			                <span className="switch switch-success switch-sm">
 			                  <label>
-			                    <input type="checkbox" checked="checked" name="select" />
+			                    <input type="checkbox" defaultChecked name="select" />
 			                    <span></span>
 			                  </label>
 			                </span>
@@ -2448,7 +2448,7 @@ export default class GeneralLayout extends Component {
 			              <div className="col-4 text-right">
 			                <span className="switch switch-success switch-sm">
 			                  <label>
-			                    <input type="checkbox" checked="checked" name="select" />
+			                    <input type="checkbox" defaultChecked name="select" />
 			                    <span></span>
 			                  </label>
 			                </span>
@@ -2465,7 +2465,7 @@ export default class GeneralLayout extends Component {
 			              <div className="col-4 text-right">
 			                <span className="switch switch-sm switch-danger">
 			                  <label>
-			                    <input type="checkbox" checked="checked" name="select" />
+			                    <input type="checkbox" defaultChecked name="select" />
 			                    <span></span>
 			                  </label>
 			                </span>
@@ -2487,7 +2487,7 @@ export default class GeneralLayout extends Component {
 			              <div className="col-4 text-right">
 			                <span className="switch switch-sm switch-danger">
 			                  <label>
-			                    <input type="checkbox" checked="checked" name="select" />
+			                    <input type="checkbox" defaultChecked name="select" />
 			                    <span></span>
 			                  </label>
 			                </span>
@@ -2504,7 +2504,7 @@ export default class GeneralLayout extends Component {
 			              <div className="col-4 text-right">
 			                <span className="switch switch-sm switch-primary">
 			                  <label>
-			                    <input type="checkbox" checked="checked" name="select" />
+			                    <input type="checkbox" defaultChecked name="select" />
 			                    <span></span>
 			                  </label>
 			                </span>
@@ -2526,7 +2526,7 @@ export default class GeneralLayout extends Component {
 			              <div className="col-4 text-right">
 			                <span className="switch switch-sm switch-primary">
 			                  <label>
-			                    <input type="checkbox" checked="checked" name="select" />
+			                    <input type="checkbox" defaultChecked name="select" />
 			                    <span></span>
 			                  </label>
 			                </span>

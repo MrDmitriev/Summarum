@@ -1,6 +1,6 @@
 import {combineReducers} from 'redux';
-import summaries from './summaries/reducers';
+import createSummaryPage from '../features/createSummaryPage/reducer';
 
 export default combineReducers({
-  summaries
+  createSummaryPage
 });

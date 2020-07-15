@@ -5,7 +5,6 @@ import {NavLink} from 'react-router-dom';
 export const MenuItem = ({item}) => {
   switch (item.type) {
     case MenuTypes.MAIN:
-      console.log(`item`, item);
       return (
         <li className="menu-item" aria-haspopup="true">
           <NavLink to={item.link} className="menu-link">
