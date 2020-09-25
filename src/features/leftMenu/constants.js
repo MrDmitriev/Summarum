@@ -10,7 +10,8 @@ export const MenuItems = [
   {
     name: `Dashboard`,
     type: MenuTypes.MAIN,
-    icon: `flaticon-home`
+    icon: `flaticon-home`,
+    link: `/`
   },
   {
     name: `Summaries`,
@@ -19,17 +20,20 @@ export const MenuItems = [
   {
     name: `Create Summary`,
     type: MenuTypes.MAIN,
-    icon: `flaticon2-plus`
+    icon: `flaticon2-plus`,
+    link: `/summary/add`
   },
   {
     name: `Generated in PDF`,
     type: MenuTypes.MAIN,
-    icon: `fas fa-file-pdf`
+    icon: `fas fa-file-pdf`,
+    link: `/`
   },
   {
     name: `In progress`,
     type: MenuTypes.MAIN,
-    icon: `flaticon2-circular-arrow`
+    icon: `flaticon2-circular-arrow`,
+    link: `/`
   },
   {
     name: `Workflow`,

@@ -1,15 +1,16 @@
 import React from 'react';
 import {MenuTypes} from 'features/leftMenu/constants';
+import {NavLink} from 'react-router-dom';
 
 export const MenuItem = ({item}) => {
   switch (item.type) {
     case MenuTypes.MAIN:
       return (
         <li className="menu-item" aria-haspopup="true">
-          <a href="index.html" className="menu-link">
+          <NavLink to={item.link} className="menu-link">
             <i className={`menu-icon ${item.icon}`}></i>
             <span className="menu-text">{item.name}</span>
-          </a>
+          </NavLink>
         </li>
       );
     case MenuTypes.SECTION:

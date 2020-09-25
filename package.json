@@ -19,11 +19,14 @@
     "recompose": "^0.30.0",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0",
+    "ts-loader": "^7.0.5",
+    "utility-types": "^3.10.0",
     "yarn": "^1.22.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "tsc",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -43,7 +46,9 @@
     ]
   },
   "devDependencies": {
+    "@types/react": "^16.9.41",
     "eslint-config-htmlacademy": "0.5.2",
-    "eslint-plugin-react": "7.20.0"
+    "eslint-plugin-react": "7.20.0",
+    "typescript": "^3.9.5"
   }
 }

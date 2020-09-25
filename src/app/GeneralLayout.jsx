@@ -1,7 +1,6 @@
 /* eslint-disable no-mixed-spaces-and-tabs */
 import React, {Component} from 'react';
 import GeneralAside from './GeneralAside';
-import SummariesList from 'components/organisms/SummariesList/SummariesList';
 
 export default class GeneralLayout extends Component {
   render() {
@@ -1374,7 +1373,7 @@ export default class GeneralLayout extends Component {
 			              {/* <!--begin::Toggle--> */}
 			              <div className="topbar-item" data-toggle="dropdown" data-offset="10px,0px">
 			                <div className="btn btn-icon btn-clean btn-dropdown btn-lg mr-1">
-			                  <img className="h-20px w-20px rounded-sm" src="assets/media/svg/flags/226-united-states.svg" alt="" />
+			                  <img className="h-20px w-20px rounded-sm" src="assets/media/svg/flags/012-uk.svg" alt="" />
 			                </div>
 			              </div>
 			              {/* <!--end::Toggle--> */}
@@ -1386,7 +1385,7 @@ export default class GeneralLayout extends Component {
 			                  <li className="navi-item">
 			                    <a href="index.html" className="navi-link">
 			                      <span className="symbol symbol-20 mr-3">
-			                        <img src="assets/media/svg/flags/226-united-states.svg" alt="" />
+			                        <img src="assets/media/svg/flags/012-uk.svg" alt="" />
 			                      </span>
 			                      <span className="navi-text">English</span>
 			                    </a>
@@ -1442,7 +1441,7 @@ export default class GeneralLayout extends Component {
 			            <div className="topbar-item">
 			              <div className="btn btn-icon w-auto btn-clean d-flex align-items-center btn-lg px-2" id="kt_quick_user_toggle">
 			                <span className="text-muted font-weight-bold font-size-base d-none d-md-inline mr-1">Hi,</span>
-			                <span className="text-dark-50 font-weight-bolder font-size-base d-none d-md-inline mr-3">Sean</span>
+			                <span className="text-dark-50 font-weight-bolder font-size-base d-none d-md-inline mr-3">Sergey, D.</span>
 			                <span className="symbol symbol-35 symbol-light-success">
 			                  <span className="symbol-label font-size-h5 font-weight-bold">S</span>
 			                </span>
@@ -1563,7 +1562,7 @@ export default class GeneralLayout extends Component {
 			        <div className="d-flex flex-column-fluid">
 			          {/* <!--begin::Container--> */}
 			          <div className="container">
-			            <SummariesList />
+			            {this.props.children}
 			          </div>
 			          {/* <!--end::Container--> */}
 			        </div>
@@ -2427,7 +2426,7 @@ export default class GeneralLayout extends Component {
 			              <div className="col-4 text-right">
 			                <span className="switch switch-success switch-sm">
 			                  <label>
-			                    <input type="checkbox" checked="checked" name="select" />
+			                    <input type="checkbox" defaultChecked name="select" />
 			                    <span></span>
 			                  </label>
 			                </span>
@@ -2449,7 +2448,7 @@ export default class GeneralLayout extends Component {
 			              <div className="col-4 text-right">
 			                <span className="switch switch-success switch-sm">
 			                  <label>
-			                    <input type="checkbox" checked="checked" name="select" />
+			                    <input type="checkbox" defaultChecked name="select" />
 			                    <span></span>
 			                  </label>
 			                </span>
@@ -2466,7 +2465,7 @@ export default class GeneralLayout extends Component {
 			              <div className="col-4 text-right">
 			                <span className="switch switch-sm switch-danger">
 			                  <label>
-			                    <input type="checkbox" checked="checked" name="select" />
+			                    <input type="checkbox" defaultChecked name="select" />
 			                    <span></span>
 			                  </label>
 			                </span>
@@ -2488,7 +2487,7 @@ export default class GeneralLayout extends Component {
 			              <div className="col-4 text-right">
 			                <span className="switch switch-sm switch-danger">
 			                  <label>
-			                    <input type="checkbox" checked="checked" name="select" />
+			                    <input type="checkbox" defaultChecked name="select" />
 			                    <span></span>
 			                  </label>
 			                </span>
@@ -2505,7 +2504,7 @@ export default class GeneralLayout extends Component {
 			              <div className="col-4 text-right">
 			                <span className="switch switch-sm switch-primary">
 			                  <label>
-			                    <input type="checkbox" checked="checked" name="select" />
+			                    <input type="checkbox" defaultChecked name="select" />
 			                    <span></span>
 			                  </label>
 			                </span>
@@ -2527,7 +2526,7 @@ export default class GeneralLayout extends Component {
 			              <div className="col-4 text-right">
 			                <span className="switch switch-sm switch-primary">
 			                  <label>
-			                    <input type="checkbox" checked="checked" name="select" />
+			                    <input type="checkbox" defaultChecked name="select" />
 			                    <span></span>
 			                  </label>
 			                </span>
@@ -2819,38 +2818,6 @@ export default class GeneralLayout extends Component {
 			  </span>
 			</div>
 			{/* <!--end::Scrolltop--> */}
-			{/* <!--begin::Sticky Toolbar--> */}
-			<ul className="sticky-toolbar nav flex-column pl-2 pr-2 pt-3 pb-3 mt-4">
-			  {/* <!--begin::Item--> */}
-			  <li className="nav-item mb-2" id="kt_demo_panel_toggle" data-toggle="tooltip" title="Check out more demos" data-placement="right">
-			    <a className="btn btn-sm btn-icon btn-bg-light btn-text-success btn-hover-success" href="index.html">
-			      <i className="flaticon2-drop"></i>
-			    </a>
-			  </li>
-			  {/* <!--end::Item--> */}
-			  {/* <!--begin::Item--> */}
-			  <li className="nav-item mb-2" data-toggle="tooltip" title="Layout Builder" data-placement="left">
-			    <a className="btn btn-sm btn-icon btn-bg-light btn-text-primary btn-hover-primary" href="https://keenthemes.com/metronic/preview/demo1/builder.html" target="_blank" rel="noreferrer">
-			      <i className="flaticon2-gear"></i>
-			    </a>
-			  </li>
-			  {/* <!--end::Item--> */}
-			  {/* <!--begin::Item--> */}
-			  <li className="nav-item mb-2" data-toggle="tooltip" title="Documentation" data-placement="left">
-			    <a className="btn btn-sm btn-icon btn-bg-light btn-text-warning btn-hover-warning" href="https://keenthemes.com/metronic/?page=docs" target="_blank" rel="noreferrer">
-			      <i className="flaticon2-telegram-logo"></i>
-			    </a>
-			  </li>
-			  {/* <!--end::Item--> */}
-			  {/* <!--begin::Item--> */}
-			  <li className="nav-item" id="kt_sticky_toolbar_chat_toggler" data-toggle="tooltip" title="Chat Example" data-placement="left">
-			    <a className="btn btn-sm btn-icon btn-bg-light btn-text-danger btn-hover-danger" href="index.html" data-toggle="modal" data-target="#kt_chat_modal">
-			      <i className="flaticon2-chat-1"></i>
-			    </a>
-			  </li>
-			  {/* <!--end::Item--> */}
-			</ul>
-			{/* <!--end::Sticky Toolbar--> */}
 			{/* <!--begin::Demo Panel--> */}
 			<div id="kt_demo_panel" className="offcanvas offcanvas-right p-10">
 			  {/* <!--begin::Header--> */}
